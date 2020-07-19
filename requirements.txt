@@ -19,7 +19,6 @@ itsdangerous==1.1.0
 Jinja2==2.11.2
 MarkupSafe==1.1.1
 orjson==3.2.2
-pkg-resources==0.0.0
 promise==2.3
 pydantic==1.6.1
 python-multipart==0.0.5
