@@ -13,15 +13,16 @@ class ImportPeto(BaseModel):
 
 class Evento(BaseModel):
     titolo: str
-    urbo: str
+    urbo: Optional[str]
     ligilo: str
+    reta: bool
     landa_id: str
-    latitudo: str
-    longitudo: str
+    latitudo: Optional[str]
+    longitudo: Optional[str]
     adreso: str
     horzono: str
     komenco: str
-    kontento: str
+    enhavo: str
     priskribo: str
 
 
