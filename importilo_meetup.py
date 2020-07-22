@@ -1,6 +1,5 @@
 import requests
-
-# import time
+import time
 
 # ekzempla evento
 # url = 'https://www.meetup.com/Esperanto-Calgary/events/qnqmgpybckbbc/'
@@ -8,6 +7,13 @@ import requests
 
 
 def importas_el_meetup(url):
+    '''
+    Funkcio trovas informojn pri evento en meetup.com
+    Uzas API laux tiu priskribo:
+    https://www.meetup.com/meetup_api/docs/:urlname/events/:id/#get
+    :param url: ligilo al la pagxo de la evento en meetup
+    :return: vortarobjekto kun informoj
+    '''
     evento = {}
 
     idx = url.split("/")
@@ -42,10 +48,13 @@ def importas_el_meetup(url):
     ] = f"{res_json['venue'].get('name')}, {res_json['venue'].get('address_1')}"
     evento["horzono"] = res_json["group"]["timezone"]
     evento["komenco"] = res_json["local_date"] + " " + res_json["local_time"]
-    # evento['fino']    = Time.at((res_json['time'].to_i + res_json['duration'].to_i) / 1000).in_time_zone(evento['time_zone']).strftime("%Y-%m-%d %H:%M:%S")
+    evento['fino'] = time.strftime(
+        '%Y-%m-%d %H:%M:%S', time.gmtime((res_json['time'] + res_json['utc_offset'] + 
+                                          res_json['duration'])/1000)
+    )
     evento["enhavo"] = res_json["description"] + res_json.get("how_to_find_us", "")
     evento["priskribo"] = res_json["name"]
-    # todo
-    # aldonu 'duration'
+
 
     return evento
+
