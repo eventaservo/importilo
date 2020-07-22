@@ -22,6 +22,7 @@ class Evento(BaseModel):
     adreso: str
     horzono: str
     komenco: str
+    fino: str
     enhavo: str
     priskribo: str
 
