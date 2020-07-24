@@ -5,7 +5,7 @@ from fastapi import FastAPI, status, applications
 from fastapi.openapi.docs import get_swagger_ui_html
 from pydantic import BaseModel
 
-from importilo_meetup import importas_el_meetup
+from importilaj_funkcioj import importas_el_meetup
 
 
 # Fiksu swagger_ui versio
