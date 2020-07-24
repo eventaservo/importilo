@@ -5,7 +5,7 @@ from fastapi import FastAPI, status, applications
 from fastapi.openapi.docs import get_swagger_ui_html
 from pydantic import BaseModel
 
-from importilaj_funkcioj import importas_el_meetup
+from importilaj_funkcioj import importas_el_meetup, importas_el_duolingo
 
 
 # Fiksu swagger_ui versio
@@ -70,3 +70,8 @@ async def legu_fontojn():
 @app.post("/meetup", status_code=status.HTTP_200_OK, response_model=Evento)
 async def importu_el_meetup(importPeto: ImportPeto):
     return importas_el_meetup(importPeto.URL)
+
+
+@app.post("/duolingo", status_code=status.HTTP_200_OK, response_model=Evento)
+async def importu_el_duolingo(importPeto: ImportPeto):
+    return importas_el_duolingo(importPeto.URL)
