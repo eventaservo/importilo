@@ -1,0 +1,84 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.24.0
+    method: GET
+    uri: https://api.meetup.com/Esperanto-Toronto/events/nbplfqyzmbfb
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA31VzW7bRhB+lQFPMSBLpCSKpBEESIsc2kNycIugQAFiSS6llchddn8syEHuyUP4
+        EfoWznv1G0qyFBioIRji7Ox8PzMcfYlqK4WXTXSXpItVmmf5Ko/jeBI1wQqvjI7u0mUcjyGFrEhX
+        Q9f+c3jsq7aKJpEWvUT03tRK0C7oB6kNwg1qlkqXTlolXTkI76VFrVZ0Tk4i54UPDvcG4TzSveIq
+        SbrK0mUen+A6U4uu5EpInMdJcRvjs4jOJ8dLUZLfxTGCYWjOQlAmLSBlLBN8XZq2ddJHd7fJ8ixm
+        L5TvlPNlbYLGEUIHMLXuYTiHlpMIcgJAvoza58u8iOfx6kX1e2t6QR/cYKVzhn4RlskJvrqYrlZp
+        Eed5slhmq3TFpKH/NiumizydJ2mWFvMsWwDDykFpzcy9DTBHNA3XKxMg0CrJ6S+j15LuvZWSzaqV
+        P+DoD2ON9mz2SNdyrBZnd9SjbMrTQXmi+6vQouGMRzXgMTr2gU8+fYy+or+uNLpTWpYSuv1Lt9bW
+        hIFNuMzKchEv0rxYzEcvT/VhhLQCnG4v3Ni3JE9XRTEvJtHWYCZ603C2GaS+tist8Jcvs2UyT5Jr
+        uzLEs3m6WCZZkaGftvsfvP3GXJ2gv2b7kyX87TjWZwMnBPU/WfHKUSvXxytSl3/en+b10eiLqbMP
+        GGSecNgIB3c42Hg/uLvZbL/fT3t0LgzT2vSzV6Rno9ludv1izfgVkq62ajiRfTu8+6DXGNgNVbIz
+        +7ez4R0h+FGd3jrhKOjQmq2k3mhoocFY8hZkkCJao/F/S89PAY8GN6wTNWqT1PTCiQarSBkSWz2l
+        3yUlxd0ipp3s+KrsSOPUAkl0DMaRTpAYQoNjzKw3lmtuR+he6OcnNYI24se/Vq0VZ19hA+Qs417S
+        g8LnUXnjAKO5ttyxp8FWcqyCBM2qHkDAW9GqM4fn74q8Ctvz/tlOqAKK6QI5qRsFar6XTjw/QS6o
+        y7PcqT+24M3zd3mz7oXquEWTkf5OstqxN0F0I26gH09HUdCBZYNqjRxJnIAnBKFAaAyu7ng5XBR+
+        Rl8wBWR0LUlwj/yG4HjDHaIaG0oirhv0Y2sOCBxt4vaTum6RqEzwyDz4jdLrKb33lHGXnOklmZaC
+        o7XhyphPfvYbKJHCVgf4gCkVges4zsDbPEICzCssujH3Gtm90P+tpYMJJCw3yimkrxmphUhiPgxk
+        9vpYTui/Ay9sjyGAjxci7mgCLju43IGOHFuEayTZ/5HVq/YIf+kOdKISiO8lA1G9EbwdmTnvfwZi
+        vBMMoZPYp6hvkGHHI7hpbIMHNrNGSSwkvgl9R7l4+TZmX3pTtko35fhD9fxNctfNrlYNRkJQ2wm9
+        MzwA1+t5Mo6Dw3iiuGYYzvgsu066Th5OWfSml94aczm4oRl90qOKPd4jckBhKT/XZvYVNtiOS2N8
+        kPC69CXiQrUXhxvI4ZZVqjv+cAyh6lSNaC/7Slr8OB9KDN9p3X/9D+RSvQkTCAAA
+    headers:
+      Accept-Ranges:
+      - bytes
+      Connection:
+      - keep-alive
+      Content-Encoding:
+      - gzip
+      Content-Length:
+      - '1131'
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sat, 15 Aug 2020 10:10:03 GMT
+      ETag:
+      - '"bd429d7ba66cf4f55c03ad6065127e4f-gzip"'
+      Server:
+      - Apache/2.4.39 (Unix) OpenSSL/1.1.1c
+      Vary:
+      - Accept-Encoding,User-Agent,Accept-Language
+      Via:
+      - 1.1 varnish
+      X-Accepted-OAuth-Scopes:
+      - basic
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      X-Meetup-Request-ID:
+      - db06d9f0-3038-4f43-a64a-32aa3e69d133
+      X-Meetup-server:
+      - ip-10-192-2-95
+      X-OAuth-Scopes:
+      - basic
+      X-RateLimit-Limit:
+      - '30'
+      X-RateLimit-Remaining:
+      - '29'
+      X-RateLimit-Reset:
+      - '10'
+      X-Served-By:
+      - cache-mad22068-MAD
+      X-Timer:
+      - S1597486203.592501,VS0,VE420
+    status:
+      code: 200
+      message: OK
+version: 1
